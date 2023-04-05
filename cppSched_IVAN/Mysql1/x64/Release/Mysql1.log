@@ -1,0 +1,107 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Mysql1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  connect.cpp
+C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(221,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(222,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(223,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(315,83): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 756 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(crud.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crud.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(value.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(value.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(document.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(document.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(error.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(error.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(collection.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(collection.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(json_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(json_parser.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(uri_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(uri_parser.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(tokenizer.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(tokenizer.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(expr_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(expr_parser.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(connection_tcpip.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(connection_tcpip.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(connection_openssl.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(connection_openssl.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(codec.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(codec.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(diagnostics.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(diagnostics.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(protocol.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(protocol.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(stmt.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stmt.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(crud.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crud.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(auth_hash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(auth_hash.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(socket_detail.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(socket_detail.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(coded_stream.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(coded_stream.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zero_copy_stream.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zero_copy_stream_impl_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream_impl_lite.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(protocol_compression.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(protocol_compression.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(common.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(arenastring.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(arenastring.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(message_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(message_lite.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_connection.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_connection.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_crud.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_crud.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_expect.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_expect.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_notice.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_notice.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_resultset.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_resultset.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_sql.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_sql.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_prepare.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_prepare.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_cursor.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_cursor.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_session.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_session.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(repeated_ptr_field.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(repeated_ptr_field.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_datatypes.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_datatypes.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(generated_message_util.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(generated_message_util.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(repeated_field.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(repeated_field.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(mysqlx_expr.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_expr.pb.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(rset.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(rset.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(deflate.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(deflate.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(inflate.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inflate.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(lz4frame.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4frame.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_common.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_decompress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(status.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(status.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(strutil.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(strutil.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(int128.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(int128.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(arena.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(arena.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(parse_context.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(parse_context.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zero_copy_stream_impl.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream_impl.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(generated_enum_util.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(generated_enum_util.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(implicit_weak_message.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(implicit_weak_message.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(extension_set.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(extension_set.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(trees.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(trees.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(adler32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(adler32.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(crc32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crc32.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zutil.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zutil.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(inftrees.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inftrees.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(inffast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inffast.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(lz4.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(lz4hc.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4hc.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(xxhash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(xxhash.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(hist.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(hist.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(entropy_common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(entropy_common.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(fse_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(fse_compress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(huf_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(huf_compress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(xxhash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(xxhash.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_compress_sequences.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress_sequences.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_compress_literals.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress_literals.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_fast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_fast.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_double_fast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_double_fast.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_lazy.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_lazy.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_opt.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_opt.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_ldm.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_ldm.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(error_private.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(error_private.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(huf_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(huf_decompress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_ddict.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_ddict.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(zstd_decompress_block.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_decompress_block.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(stringpiece.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stringpiece.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(structurally_valid.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(structurally_valid.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(wire_format_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(wire_format_lite.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(io_win32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(io_win32.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(fse_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(fse_decompress.obj)' or at ''; linking object as if no debug info
+mysqlcppconn8-static.lib(stringprintf.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stringprintf.obj)' or at ''; linking object as if no debug info
+  Mysql1.vcxproj -> C:\Users\Rinat\source\repos\Mysql1\x64\Release\DB_IVAN.exe
