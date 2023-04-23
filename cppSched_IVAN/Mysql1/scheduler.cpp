@@ -1,6 +1,10 @@
-#include "connect.h"
+#include <mysqlx/xdevapi.h>
+#include "entities.h"
+#include "functions_for_specs.h"
+#include "math.h"
+#include <algorithm>
 
-std::vector<std::string> getScheduler(Session& sess, std::vector<Spec>& specs, std::vector <Student>& students, \
+std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& specs, std::vector <Student>& students, \
 	std::vector <Teacher>& teachers, std::vector <Laba>& labs) {
 
 	const int MAX_STUDENTS_IN_GROUP = 4;

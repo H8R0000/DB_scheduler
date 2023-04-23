@@ -1,12 +1,6 @@
 #pragma once
 
-#include "connect.h"
+#include <mysqlx/xdevapi.h>
+#include "entities.h"
 
-struct Spec
-{
-    int id_spec;
-    std::string name;
-    int priority;
-};
-
-std::vector<Spec> fetchAllSpecs(Session& sess);
+std::vector<Spec> fetchAllSpecs(mysqlx::Session& sess);

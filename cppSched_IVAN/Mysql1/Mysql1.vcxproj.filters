@@ -18,9 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="connect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="groups.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -44,9 +41,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="connect.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="students.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -63,6 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="functions_for_specs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

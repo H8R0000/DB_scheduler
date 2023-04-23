@@ -145,7 +145,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="connect.cpp" />
     <ClCompile Include="functions_for_specs.cpp" />
     <ClCompile Include="groups.cpp" />
     <ClCompile Include="labs.cpp" />
@@ -156,7 +155,8 @@
     <ClCompile Include="teachers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="connect.h" />
+    <ClInclude Include="entities.h" />
+    <ClInclude Include="functions_for_specs.h" />
     <ClInclude Include="groups.h" />
     <ClInclude Include="labs.h" />
     <ClInclude Include="scheduler.h" />

@@ -1,14 +1,13 @@
-#include "connect.h"
+#include <mysqlx/xdevapi.h>
+#include "entities.h"
 
-std::vector<Laba> fetchAllLabs(Session& sess)
+std::vector<Laba> fetchAllLabs(mysqlx::Session& sess)
 {
-	std::vector<Laba> vector;
-	std::string table_str = "laba";
-	Schema myDb = sess.getSchema("students_db", true);
-	Table myTable = myDb.getTable(table_str);
-	RowResult myRows = myTable.select("idlaba", "name", "direction").execute();
+	std::vector<Laba> laba;
+	mysqlx::RowResult myRows = sess.getSchema("students_db", true).getTable("laba")
+		.select("idlaba", "name", "direction").execute();
 
-	for (Row row : myRows.fetchAll())
+	for (mysqlx::Row row : myRows.fetchAll())
 	{
 		Laba LABA;
 		LABA.id_laba = row.get(0);
@@ -16,37 +15,22 @@ std::vector<Laba> fetchAllLabs(Session& sess)
 			LABA.name = std::string(row.get(1));
 		if (!row.get(2).isNull())
 			LABA.direction = std::string(row.get(2));
-		vector.push_back(LABA);
+		laba.push_back(LABA);
 	}
 
-	return vector;
+	return laba;
 }
 
-void addLaba(struct Laba laba, Session& sess)
+void addLaba(struct Laba laba, mysqlx::Session& sess)
 {
-	// Session sess("mysqlx://root:Zxcqwe7931@127.0.0.1");
-	std::string table_str = "laba";
-	Schema myDb = sess.getSchema("students_db", true);
-
-	// Accessing an existing table
-	Table myTable = myDb.getTable(table_str);
-
-	// Find a row in the SQL Table
-	myTable.insert("name")
+	sess.getSchema("students_db", true).getTable("laba")
+		.insert("name")
 		.values(laba.name)
 		.execute();
 }
 
-void deleteLaba(std::string id, Session& sess)
+void deleteLaba(std::string id, mysqlx::Session& sess)
 {
-
-	// Session sess("mysqlx://root:Zxcqwe7931@127.0.0.1");
-	std::string table_str = "laba";
-	Schema myDb = sess.getSchema("students_db", true);
-
-	// Accessing an existing table
-	Table myTable = myDb.getTable(table_str);
-
-	// Find a row in the SQL Table
-	myTable.remove().where("id_laba = " + id).execute();
+	sess.getSchema("students_db", true).getTable("laba")
+		.remove().where("id_laba = " + id).execute();
 }
