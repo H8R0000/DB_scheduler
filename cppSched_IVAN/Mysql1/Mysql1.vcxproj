@@ -24,7 +24,7 @@
     <ProjectGuid>{fcb18ee3-1f2e-4a5f-b1f3-5455060c9944}</ProjectGuid>
     <RootNamespace>Mysql1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DB_IVAN</ProjectName>
+    <ProjectName>scheduler</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <mysqlx/xdevapi.h>
 #include "entities.h"
 #include "functions_for_specs.h"
@@ -78,9 +79,8 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 			}
 		}
 
-		/*
 		for (Group group : groupsForSpec) {
-			cout << "groupTeacher " << group.teacher.surname << endl;
+			std::cout << "groupTeacher " << group.teacher.surname << endl;
 
 			cout << "students: " << endl;
 			for (Student st : group.students) {
@@ -93,7 +93,7 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 				cout << lab << ", ";
 			}
 			cout << endl;
-		}*/
+		}
 
 		groups += groupsForSpec;
 	}
