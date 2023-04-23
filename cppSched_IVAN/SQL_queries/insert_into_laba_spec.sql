@@ -1,0 +1,1 @@
+INSERT into laba_spec (id_spec, idlaba) SELECT 1, s.idlaba FROM laba s WHERE direction="MECH"

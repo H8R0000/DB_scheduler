@@ -21,9 +21,48 @@
     <ClCompile Include="connect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="groups.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="labs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teachers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="students.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="specs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="functions_for_specs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="connect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="students.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teachers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="labs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="specs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="groups.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scheduler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

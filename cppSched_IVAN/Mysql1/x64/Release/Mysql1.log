@@ -1,107 +1,475 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (Mysql1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿D:\MVS\Development Environment\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (x64\Release\) содержит файлы, которые используются совместно с другим проектом (Mysql1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   connect.cpp
-C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(221,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(222,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(223,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Rinat\source\repos\Mysql1\Mysql1\connect.cpp(315,83): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(4,13): error C2995: void SWAP(T &,T &): шаблон функции уже определен
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(4,13): message : см. объявление "SWAP"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(9,17): error C2995: std::vector<_Ty,std::allocator<_Ty>> &operator +=(std::vector<_Ty,std::allocator<_Ty>> &,const std::vector<_Ty,std::allocator<_Ty>> &): шаблон функции уже определен
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(9,17): message : см. объявление "operator +="
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,22): error C2365: fetchAllStudentsWithSpec: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,22): message : см. объявление "fetchAllStudentsWithSpec"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,21): error C2365: fetchAllLabsForSpec: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,21): message : см. объявление "fetchAllLabsForSpec"
+  functions_for_specs.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(4,13): error C2995: void SWAP(T &,T &): шаблон функции уже определен
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(4,13): message : см. объявление "SWAP"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(9,17): error C2995: std::vector<_Ty,std::allocator<_Ty>> &operator +=(std::vector<_Ty,std::allocator<_Ty>> &,const std::vector<_Ty,std::allocator<_Ty>> &): шаблон функции уже определен
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(9,17): message : см. объявление "operator +="
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,22): error C2365: fetchAllStudentsWithSpec: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,22): message : см. объявление "fetchAllStudentsWithSpec"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,21): error C2365: fetchAllLabsForSpec: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,21): message : см. объявление "fetchAllLabsForSpec"
+  group.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: group.cpp: No such file or directory,
+  groups.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+  laba.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: laba.cpp: No such file or directory,
+  labs.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.cpp(3,19): error C2365: fetchAllLabs: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,19): message : см. объявление "fetchAllLabs"
   main.cpp
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 756 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(crud.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crud.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(value.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(value.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(document.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(document.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(error.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(error.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(collection.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(collection.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(json_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(json_parser.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(uri_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(uri_parser.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(tokenizer.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(tokenizer.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(expr_parser.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(expr_parser.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(connection_tcpip.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(connection_tcpip.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(connection_openssl.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(connection_openssl.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(codec.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(codec.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(diagnostics.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(diagnostics.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(protocol.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(protocol.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(session.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(session.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(stmt.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stmt.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(crud.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crud.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(result.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(result.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(auth_hash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(auth_hash.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(socket_detail.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(socket_detail.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(coded_stream.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(coded_stream.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zero_copy_stream.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zero_copy_stream_impl_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream_impl_lite.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(protocol_compression.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(protocol_compression.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(common.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(arenastring.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(arenastring.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(message_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(message_lite.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_connection.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_connection.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_crud.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_crud.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_expect.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_expect.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_notice.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_notice.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_resultset.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_resultset.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_sql.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_sql.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_prepare.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_prepare.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_cursor.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_cursor.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_session.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_session.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(repeated_ptr_field.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(repeated_ptr_field.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_datatypes.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_datatypes.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(generated_message_util.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(generated_message_util.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(repeated_field.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(repeated_field.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(mysqlx_expr.pb.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(mysqlx_expr.pb.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(rset.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(rset.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(deflate.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(deflate.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(inflate.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inflate.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(lz4frame.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4frame.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_common.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_decompress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(status.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(status.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(strutil.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(strutil.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(int128.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(int128.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(arena.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(arena.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(parse_context.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(parse_context.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zero_copy_stream_impl.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zero_copy_stream_impl.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(generated_enum_util.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(generated_enum_util.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(implicit_weak_message.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(implicit_weak_message.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(extension_set.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(extension_set.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(trees.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(trees.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(adler32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(adler32.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(crc32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(crc32.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zutil.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zutil.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(inftrees.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inftrees.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(inffast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(inffast.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(lz4.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(lz4hc.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(lz4hc.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(xxhash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(xxhash.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(hist.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(hist.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(entropy_common.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(entropy_common.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(fse_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(fse_compress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(huf_compress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(huf_compress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(xxhash.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(xxhash.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_compress_sequences.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress_sequences.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_compress_literals.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_compress_literals.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_fast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_fast.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_double_fast.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_double_fast.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_lazy.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_lazy.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_opt.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_opt.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_ldm.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_ldm.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(error_private.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(error_private.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(huf_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(huf_decompress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_ddict.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_ddict.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(zstd_decompress_block.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(zstd_decompress_block.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(stringpiece.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stringpiece.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(structurally_valid.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(structurally_valid.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(wire_format_lite.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(wire_format_lite.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(io_win32.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(io_win32.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(fse_decompress.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(fse_decompress.obj)' or at ''; linking object as if no debug info
-mysqlcppconn8-static.lib(stringprintf.obj) : warning LNK4099: PDB '' was not found with 'mysqlcppconn8-static.lib(stringprintf.obj)' or at ''; linking object as if no debug info
-  Mysql1.vcxproj -> C:\Users\Rinat\source\repos\Mysql1\x64\Release\DB_IVAN.exe
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\main.cpp(9,36): error C2064: результатом вычисления фрагмента не является функция, принимающая 1 аргументов
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\main.cpp(10,36): error C2064: результатом вычисления фрагмента не является функция, принимающая 1 аргументов
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\main.cpp(11,29): error C2064: результатом вычисления фрагмента не является функция, принимающая 1 аргументов
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\main.cpp(12,30): error C2064: результатом вычисления фрагмента не является функция, принимающая 1 аргументов
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\main.cpp(15,9): error C2064: результатом вычисления фрагмента не является функция, принимающая 5 аргументов
+  scheduler.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(3,26): error C2365: getScheduler: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,26): message : см. объявление "getScheduler"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(10,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(12,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(15,36): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(20,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(28,39): error C2064: результатом вычисления фрагмента не является функция, принимающая 2 аргументов
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(30,52): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(30,52): warning C4267: инициализация: преобразование из "size_t" в "const int"; возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(33,28): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(35,36): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.cpp(38,35): error C2064: результатом вычисления фрагмента не является функция, принимающая 2 аргументов
+  spec.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: spec.cpp: No such file or directory,
+  specs.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.cpp(3,19): error C2365: fetchAllSpecs: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,19): message : см. объявление "fetchAllSpecs"
+  student.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: student.cpp: No such file or directory,
+  students.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.cpp(3,22): error C2365: fetchAllStudents: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,22): message : см. объявление "fetchAllStudents"
+  teacher.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: teacher.cpp: No such file or directory,
+  teachers.cpp
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(17,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(19,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\students.h(21,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(13,41): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(17,36): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(12,32): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,32): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(14,41): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\labs.h(16,33): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,33): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\specs.h(12,42): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,17): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,10): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(12,25): error C2955: "std::vector": для использования класс шаблон требуется список аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\groups.h(21,34): error C2061: синтаксическая ошибка: идентификатор "Session"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,47): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,56): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,62): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(16,87): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): error C2065: string: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2923: std::vector: "string" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,13): message : см. объявление "string"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,6): error C2976: std::vector: слишком мало аргументов шаблон
+D:\MVS\Development Environment\VC\Tools\MSVC\14.35.32215\include\format(71,7): message : см. объявление "std::vector"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,41): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,50): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,56): error C2059: синтаксическая ошибка: const
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\functions_for_specs.cpp(48,81): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,39): error C2065: Session: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,48): error C2065: sess: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,73): error C2065: specs: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,59): error C2275: "std::vector<Spec,std::allocator<Spec>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,103): error C2065: students: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(5,85): error C2275: "std::vector<Student,std::allocator<Student>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,28): error C2065: teachers: необъявленный идентификатор
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,10): error C2275: "std::vector<Teacher,std::allocator<Teacher>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\scheduler.h(6,43): error C2275: "std::vector<Laba,std::allocator<Laba>>": ожидается выражение вместо типа
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.cpp(3,23): error C2365: fetchAllTeachers: переопределение; предыдущим определением было "переменная данных"
+D:\GitHub\DB_debug\cppSched_IVAN\Mysql1\teachers.h(15,22): message : см. объявление "fetchAllTeachers"

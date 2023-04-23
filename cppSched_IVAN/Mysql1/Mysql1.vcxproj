@@ -117,6 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,6 +133,7 @@
       <PreprocessorDefinitions>STATIC_CONCPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Program Files\MySQL\Connector C++ 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,10 +146,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="connect.cpp" />
+    <ClCompile Include="functions_for_specs.cpp" />
+    <ClCompile Include="groups.cpp" />
+    <ClCompile Include="labs.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="scheduler.cpp" />
+    <ClCompile Include="specs.cpp" />
+    <ClCompile Include="students.cpp" />
+    <ClCompile Include="teachers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="connect.h" />
+    <ClInclude Include="groups.h" />
+    <ClInclude Include="labs.h" />
+    <ClInclude Include="scheduler.h" />
+    <ClInclude Include="specs.h" />
+    <ClInclude Include="students.h" />
+    <ClInclude Include="teachers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
