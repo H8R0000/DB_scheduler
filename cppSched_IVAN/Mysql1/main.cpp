@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <mysqlx/xdevapi.h>
 #include <atltime.h>
+
 #include "entities.h"
 #include "students.h"
 #include "teachers.h"
@@ -24,12 +25,14 @@ int main()
 		std::vector <Laba> labs = fetchAllLabs(sess);
 		std::vector <Spec> specs = fetchAllSpecs(sess);
 
-		std::vector<SchedulerTeacherEntry> schedule;
+		std::vector<Schedule::TeacherEntry> schedule;
 		schedule = getScheduler(sess, startDate, specs, students, teachers, labs);
 
-		cout << "-------------------------------------------------------------------------" << endl;
+		// cout << "-------------------------------------------------------------------------" << endl;
 
-		for (auto teacherEntry : schedule) {
+		cout << schedule << endl;
+
+		/*for (auto teacherEntry : schedule) {
 			cout << "teacher: " << teacherEntry.teacher << endl;
 			cout << "schedule: " << endl;
 			for (auto dateEntry : teacherEntry.schedule) {
@@ -47,7 +50,7 @@ int main()
 				cout << endl;
 			}
 			cout << endl;
-		}
+		}*/
 
 		sess.close();
 	}

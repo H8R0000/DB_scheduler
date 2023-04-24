@@ -1,12 +1,16 @@
 #include <iostream>
 #include <atltime.h>
 #include <mysqlx/xdevapi.h>
+#include <algorithm>
+#include <cmath>
+#include <nlohmann/json.hpp>
+
 #include "entities.h"
 #include "functions_for_specs.h"
-#include "math.h"
-#include <algorithm>
 
-std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& startDate, std::vector<Spec>& specs, std::vector <Student>& students, \
+using json = nlohmann::json;
+
+std::vector<Schedule::TeacherEntry> getScheduler(mysqlx::Session& sess, CTime& startDate, std::vector<Spec>& specs, std::vector <Student>& students, \
 	std::vector <Teacher>& teachers, std::vector <Laba>& labs) {
 
 	int dayOfWeek = startDate.GetDayOfWeek();
@@ -35,7 +39,7 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 	int teacherIndex = 0;
 
 	for (Spec spec : specs) {
-		cout << spec.name << endl;
+		// cout << spec.name << endl;
 		std::vector<Student> specStudents = fetchAllStudentsWithSpec(sess, spec.name);
 
 		const int specStudentsCount = specStudents.size();
@@ -92,7 +96,7 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 			studentIndex++;
 		}
 
-		for (Group group : groupsForSpec) {
+		/*for (Group group : groupsForSpec) {
 			std::cout << "groupTeacher " << group.teacher.surname << endl;
 
 			cout << "students: " << endl;
@@ -105,13 +109,12 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 				cout << endl;
 			}
 			cout << endl;
-		}
+		}*/
 
 		groups += groupsForSpec;
 	}
 
-	// std::map<std::string, SchedulerDateEntry> schedule;
-	std::vector<SchedulerTeacherEntry> schedule;
+	std::vector<Schedule::TeacherEntry> schedule;
 
 	for (auto group : groups) {
 		std::vector<StudentLabs> firstShiftStudentLabs;
@@ -122,15 +125,15 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 
 		int studentLabsCount = group.studentLabs.at(0).labs.size();
 
-		std::vector<SchedulerDateEntry> dateEntries;
+		std::vector<Schedule::DateEntry> dateEntries;
 
 		for (int i = 0; i < studentLabsCount; i++) {
 			CTime actualDateTime = startDate + CTimeSpan(i * 7, 0, 0, 0);
 
-			std::vector<SchedulerShiftEntry> firstShift;
+			std::vector<Schedule::ShiftEntry> firstShift;
 
 			for (auto firstShiftStLaba : firstShiftStudentLabs) {
-				SchedulerShiftEntry entry;
+				Schedule::ShiftEntry entry;
 				entry.student = firstShiftStLaba.student.surname + " " + firstShiftStLaba.student.name 
 					+ " " + firstShiftStLaba.student.patronymic;
 				entry.laba = firstShiftStLaba.labs.at(i);
@@ -138,10 +141,10 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 				firstShift.push_back(entry);
 			}
 
-			std::vector<SchedulerShiftEntry> secondShift;
+			std::vector<Schedule::ShiftEntry> secondShift;
 
 			for (auto secondShiftStLaba : secondShiftStudentLabs) {
-				SchedulerShiftEntry entry;
+				Schedule::ShiftEntry entry;
 				entry.student = secondShiftStLaba.student.surname + " " + secondShiftStLaba.student.name
 					+ " " + secondShiftStLaba.student.patronymic;
 				entry.laba = secondShiftStLaba.labs.at(i);
@@ -149,7 +152,7 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 				secondShift.push_back(entry);
 			}
 
-			SchedulerDateEntry schedulerEntry;
+			Schedule::DateEntry schedulerEntry;
 
 			// Convert a TCHAR string to a LPCSTR
 			CT2CA pszConvertedAnsiString(actualDateTime.Format(_T("%F")).GetString()); // format as YYYY-MM-DD
@@ -163,9 +166,8 @@ std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& st
 			dateEntries.push_back(schedulerEntry);
 		}
 
-		// schedule.insert(std::pair{ teacherFullName, schedulerEntry });
 		Teacher teacher = group.teacher;
-		SchedulerTeacherEntry teacherEntry;
+		Schedule::TeacherEntry teacherEntry;
 		teacherEntry.teacher = teacher.surname + " " + teacher.name + " " + teacher.patronymic;
 		teacherEntry.schedule = dateEntries;
 

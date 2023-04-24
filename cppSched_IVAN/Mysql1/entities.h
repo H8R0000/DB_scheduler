@@ -1,10 +1,12 @@
 #pragma once
 
+#include <nlohmann/json.hpp>
 #include <vector>
 #include <string>
 #include <atltime.h>
 
 using namespace std;
+using json = nlohmann::json;
 
 struct Student
 {
@@ -53,21 +55,36 @@ struct Group
     Spec spec;
 };
 
-struct SchedulerShiftEntry
+namespace Schedule
 {
-    string student;
-    string laba;
-};
+    struct ShiftEntry
+    {
+        string student;
+        string laba;
+    };
 
-struct SchedulerDateEntry
-{
-    string date;
-    vector<SchedulerShiftEntry> firstShift;
-    vector<SchedulerShiftEntry> secondShift;
-};
+    struct DateEntry
+    {
+        string date;
+        vector<ShiftEntry> firstShift;
+        vector<ShiftEntry> secondShift;
+    };
 
-struct SchedulerTeacherEntry
-{
-    string teacher;
-    vector<SchedulerDateEntry> schedule;
-};
+    struct TeacherEntry
+    {
+        string teacher;
+        vector<DateEntry> schedule;
+    };
+
+    /*void to_json(json& j, const ShiftEntry& s) {
+        j = json{ {"student", s.student}, {"laba", s.laba} };
+    }
+
+    void to_json(json& j, const DateEntry& d) {
+        j = json{ {"date", d.date}, {"firstShift", d.firstShift}, {"secondShift", d.secondShift} };
+    }
+
+    void to_json(json& j, const TeacherEntry& t) {
+        j = json{ {"teacher", t.teacher}, {"schedule", t.schedule} };
+    }*/
+}
