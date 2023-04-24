@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <string>
+#include <atltime.h>
 
 using namespace std;
 
@@ -39,10 +40,22 @@ struct Laba
     string direction;
 };
 
+struct StudentLabs
+{
+    Student student;
+    vector<string> labs;
+};
+
 struct Group
 {
-    vector<Student> students;
-    vector<string> labas;
+    vector<StudentLabs> studentLabs;
     Teacher teacher;
     Spec spec;
+};
+
+struct SchedulerEntry
+{
+    CTime date;
+    vector<StudentLabs> firstShiftStudentLabs;
+    vector<StudentLabs> secondShiftStudentLabs;
 };

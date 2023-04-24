@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <mysqlx/xdevapi.h>
+#include <atltime.h>
 #include "entities.h"
 #include "students.h"
 #include "teachers.h"
@@ -9,12 +10,13 @@
 
 using ::std::cout;
 using ::std::endl;
-using namespace ::mysqlx;
 
 int main()
 {
 	try
 	{
+		CTime startDate = CTime(2023, 9, 1, 0, 0, 0, 0);
+
 		mysqlx::Session sess("mysqlx://root:Zxcqwe7931@127.0.0.1");
 
 		std::vector <Student> students = fetchAllStudents(sess);
@@ -22,8 +24,8 @@ int main()
 		std::vector <Laba> labs = fetchAllLabs(sess);
 		std::vector <Spec> specs = fetchAllSpecs(sess);
 
-		std::vector<std::string> OUT;
-		OUT = getScheduler(sess, specs, students, teachers, labs);
+		std::vector<std::string> getOut;
+		getOut = getScheduler(sess, startDate, specs, students, teachers, labs);
 
 		sess.close();
 	}

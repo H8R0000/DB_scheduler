@@ -1,13 +1,15 @@
 #include <iostream>
+#include <atltime.h>
 #include <mysqlx/xdevapi.h>
 #include "entities.h"
 #include "functions_for_specs.h"
 #include "math.h"
 #include <algorithm>
 
-std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& specs, std::vector <Student>& students, \
+std::vector<std::string> getScheduler(mysqlx::Session& sess, CTime& startDate, std::vector<Spec>& specs, std::vector <Student>& students, \
 	std::vector <Teacher>& teachers, std::vector <Laba>& labs) {
 
+	// TODO: change to MAX_STUDENTS_IN_GROUP = 10
 	const int MAX_STUDENTS_IN_GROUP = 4;
 	const int MAX_SHIFTS_PER_DAY = 2;
 
@@ -29,7 +31,7 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 	int teacherIndex = 0;
 
 	for (Spec spec : specs) {
-		// cout << spec.name << endl;
+		cout << spec.name << endl;
 		std::vector<Student> specStudents = fetchAllStudentsWithSpec(sess, spec.name);
 
 		const int specStudentsCount = specStudents.size();
@@ -43,11 +45,20 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 		std::vector<string> specLabas = fetchAllLabsForSpec(sess, spec.name);
 
 		int groupIndex = 0;
+		int studentIndex = 0;
 
 		std::vector<Group> groupsForSpec;
 
 		// split students by groups
 		for (Student st : specStudents) {
+			StudentLabs studentLabs;
+			studentLabs.student = st;
+
+			std::vector<string> groupLabs(specLabas);
+			std::rotate(groupLabs.begin(), groupLabs.begin() + studentIndex, groupLabs.end());
+
+			studentLabs.labs = groupLabs;
+
 			if (groupsForSpec.size() < teachersCountForSpec) {
 				Group group;
 				group.spec = spec;
@@ -58,18 +69,14 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 				if (teacherIndex >= teachersCount) {
 					teacherIndex = 0;
 				}
-
-				group.students.push_back(st);
-
-				std::vector<string> groupLabs(specLabas);
-				std::rotate(groupLabs.begin(), groupLabs.begin() + groupIndex, groupLabs.end());
-				group.labas = groupLabs;
+				
+				group.studentLabs.push_back(studentLabs);
 
 				groupsForSpec.push_back(group);
 			}
 			else {
 				groupsForSpec.at(groupIndex).spec = spec;
-				groupsForSpec.at(groupIndex).students.push_back(st);
+				groupsForSpec.at(groupIndex).studentLabs.push_back(studentLabs);
 			}
 
 			groupIndex++;
@@ -77,25 +84,52 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, std::vector<Spec>& 
 			if (groupIndex >= teachersCountForSpec) {
 				groupIndex = 0;
 			}
+
+			studentIndex++;
 		}
 
 		for (Group group : groupsForSpec) {
 			std::cout << "groupTeacher " << group.teacher.surname << endl;
 
 			cout << "students: " << endl;
-			for (Student st : group.students) {
-				cout << st.surname << ", ";
-			}
-			cout << endl;
+			for (auto stLabs : group.studentLabs) {
+				cout << stLabs.student.surname << " : ";
 
-			cout << "labs: " << endl;
-			for (auto lab : group.labas) {
-				cout << lab << ", ";
+				for (auto lab : stLabs.labs) {
+					cout << lab << ", ";
+				}
+				cout << endl;
 			}
 			cout << endl;
 		}
 
 		groups += groupsForSpec;
+	}
+
+	int dayCount = 0;
+
+	std::map<std::string, SchedulerEntry> schedule;
+
+	for (auto group : groups) {
+		CTime firstShiftDateTime = startDate + CTimeSpan(dayCount, 0, 0, 0);
+
+		Teacher teacher = group.teacher;
+		std::string teacherFullName = teacher.surname + " " + teacher.name + " " + teacher.patronymic;
+
+		std::vector<StudentLabs> firstShiftStudentLabs;
+		std::vector<StudentLabs> secondShiftStudentLabs;
+
+		firstShiftStudentLabs.assign(group.studentLabs.begin(), group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP);
+		secondShiftStudentLabs.assign(group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP, group.studentLabs.end());
+
+		SchedulerEntry schedulerEntry;
+		schedulerEntry.date = firstShiftDateTime;
+		schedulerEntry.firstShiftStudentLabs = firstShiftStudentLabs;
+		schedulerEntry.secondShiftStudentLabs = secondShiftStudentLabs;
+
+		schedule.insert(std::pair{ teacherFullName, schedulerEntry });
+
+		dayCount++;
 	}
 
 	std::vector <std::string> outScheduler;
