@@ -24,8 +24,30 @@ int main()
 		std::vector <Laba> labs = fetchAllLabs(sess);
 		std::vector <Spec> specs = fetchAllSpecs(sess);
 
-		std::vector<std::string> getOut;
-		getOut = getScheduler(sess, startDate, specs, students, teachers, labs);
+		std::vector<SchedulerTeacherEntry> schedule;
+		schedule = getScheduler(sess, startDate, specs, students, teachers, labs);
+
+		cout << "-------------------------------------------------------------------------" << endl;
+
+		for (auto teacherEntry : schedule) {
+			cout << "teacher: " << teacherEntry.teacher << endl;
+			cout << "schedule: " << endl;
+			for (auto dateEntry : teacherEntry.schedule) {
+				cout << "date: " << dateEntry.date << endl;
+
+				cout << "firstShift: " << endl;
+				for (auto shiftEntry : dateEntry.firstShift) {
+					cout << "  " << shiftEntry.student << " " << shiftEntry.laba << endl;
+				}
+
+				cout << "secondShift: " << endl;
+				for (auto shiftEntry : dateEntry.secondShift) {
+					cout << "  " << shiftEntry.student << " " << shiftEntry.laba << endl;
+				}
+				cout << endl;
+			}
+			cout << endl;
+		}
 
 		sess.close();
 	}

@@ -53,9 +53,21 @@ struct Group
     Spec spec;
 };
 
-struct SchedulerEntry
+struct SchedulerShiftEntry
 {
-    CTime date;
-    vector<StudentLabs> firstShiftStudentLabs;
-    vector<StudentLabs> secondShiftStudentLabs;
+    string student;
+    string laba;
+};
+
+struct SchedulerDateEntry
+{
+    string date;
+    vector<SchedulerShiftEntry> firstShift;
+    vector<SchedulerShiftEntry> secondShift;
+};
+
+struct SchedulerTeacherEntry
+{
+    string teacher;
+    vector<SchedulerDateEntry> schedule;
 };

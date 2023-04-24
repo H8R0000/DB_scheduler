@@ -6,8 +6,12 @@
 #include "math.h"
 #include <algorithm>
 
-std::vector<std::string> getScheduler(mysqlx::Session& sess, CTime& startDate, std::vector<Spec>& specs, std::vector <Student>& students, \
+std::vector<SchedulerTeacherEntry> getScheduler(mysqlx::Session& sess, CTime& startDate, std::vector<Spec>& specs, std::vector <Student>& students, \
 	std::vector <Teacher>& teachers, std::vector <Laba>& labs) {
+
+	int dayOfWeek = startDate.GetDayOfWeek();
+	assert(dayOfWeek != 1); // date is not Sunday
+	assert(dayOfWeek != 7); // date is not Saturday
 
 	// TODO: change to MAX_STUDENTS_IN_GROUP = 10
 	const int MAX_STUDENTS_IN_GROUP = 4;
@@ -69,7 +73,7 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, CTime& startDate, s
 				if (teacherIndex >= teachersCount) {
 					teacherIndex = 0;
 				}
-				
+
 				group.studentLabs.push_back(studentLabs);
 
 				groupsForSpec.push_back(group);
@@ -106,33 +110,67 @@ std::vector<std::string> getScheduler(mysqlx::Session& sess, CTime& startDate, s
 		groups += groupsForSpec;
 	}
 
-	int dayCount = 0;
-
-	std::map<std::string, SchedulerEntry> schedule;
+	// std::map<std::string, SchedulerDateEntry> schedule;
+	std::vector<SchedulerTeacherEntry> schedule;
 
 	for (auto group : groups) {
-		CTime firstShiftDateTime = startDate + CTimeSpan(dayCount, 0, 0, 0);
-
-		Teacher teacher = group.teacher;
-		std::string teacherFullName = teacher.surname + " " + teacher.name + " " + teacher.patronymic;
-
 		std::vector<StudentLabs> firstShiftStudentLabs;
 		std::vector<StudentLabs> secondShiftStudentLabs;
 
 		firstShiftStudentLabs.assign(group.studentLabs.begin(), group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP);
 		secondShiftStudentLabs.assign(group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP, group.studentLabs.end());
 
-		SchedulerEntry schedulerEntry;
-		schedulerEntry.date = firstShiftDateTime;
-		schedulerEntry.firstShiftStudentLabs = firstShiftStudentLabs;
-		schedulerEntry.secondShiftStudentLabs = secondShiftStudentLabs;
+		int studentLabsCount = group.studentLabs.at(0).labs.size();
 
-		schedule.insert(std::pair{ teacherFullName, schedulerEntry });
+		std::vector<SchedulerDateEntry> dateEntries;
 
-		dayCount++;
+		for (int i = 0; i < studentLabsCount; i++) {
+			CTime actualDateTime = startDate + CTimeSpan(i * 7, 0, 0, 0);
+
+			std::vector<SchedulerShiftEntry> firstShift;
+
+			for (auto firstShiftStLaba : firstShiftStudentLabs) {
+				SchedulerShiftEntry entry;
+				entry.student = firstShiftStLaba.student.surname + " " + firstShiftStLaba.student.name 
+					+ " " + firstShiftStLaba.student.patronymic;
+				entry.laba = firstShiftStLaba.labs.at(i);
+
+				firstShift.push_back(entry);
+			}
+
+			std::vector<SchedulerShiftEntry> secondShift;
+
+			for (auto secondShiftStLaba : secondShiftStudentLabs) {
+				SchedulerShiftEntry entry;
+				entry.student = secondShiftStLaba.student.surname + " " + secondShiftStLaba.student.name
+					+ " " + secondShiftStLaba.student.patronymic;
+				entry.laba = secondShiftStLaba.labs.at(i);
+
+				secondShift.push_back(entry);
+			}
+
+			SchedulerDateEntry schedulerEntry;
+
+			// Convert a TCHAR string to a LPCSTR
+			CT2CA pszConvertedAnsiString(actualDateTime.Format(_T("%F")).GetString()); // format as YYYY-MM-DD
+			// construct a std::string using the LPCSTR input
+			std::string strStd(pszConvertedAnsiString);
+			schedulerEntry.date = strStd; 
+
+			schedulerEntry.firstShift = firstShift;
+			schedulerEntry.secondShift = secondShift;
+
+			dateEntries.push_back(schedulerEntry);
+		}
+
+		// schedule.insert(std::pair{ teacherFullName, schedulerEntry });
+		Teacher teacher = group.teacher;
+		SchedulerTeacherEntry teacherEntry;
+		teacherEntry.teacher = teacher.surname + " " + teacher.name + " " + teacher.patronymic;
+		teacherEntry.schedule = dateEntries;
+
+		schedule.push_back(teacherEntry);
 	}
 
-	std::vector <std::string> outScheduler;
-
-	return outScheduler;
+	return schedule;
 }
