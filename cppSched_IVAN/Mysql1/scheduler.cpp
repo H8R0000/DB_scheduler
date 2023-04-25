@@ -17,9 +17,9 @@ std::vector<Schedule::TeacherEntry> getScheduler(mysqlx::Session& sess, CTime& s
 	assert(dayOfWeek != 1); // date is not Sunday
 	assert(dayOfWeek != 7); // date is not Saturday
 
-	// TODO: change to MAX_STUDENTS_IN_GROUP = 10
-	const int MAX_STUDENTS_IN_GROUP = 4;
+	const int MAX_STUDENTS_IN_GROUP = 10;
 	const int MAX_SHIFTS_PER_DAY = 2;
+	const int MAX_LABS_FOR_STUDENT = 14;
 
 	// get amount of students, teachers, labs
 	int studentsCount = students.size();
@@ -65,7 +65,12 @@ std::vector<Schedule::TeacherEntry> getScheduler(mysqlx::Session& sess, CTime& s
 			std::vector<string> groupLabs(specLabas);
 			std::rotate(groupLabs.begin(), groupLabs.begin() + studentIndex, groupLabs.end());
 
-			studentLabs.labs = groupLabs;
+			if (groupLabs.size() > MAX_LABS_FOR_STUDENT) {
+				studentLabs.labs.assign(groupLabs.begin(), groupLabs.begin() + MAX_LABS_FOR_STUDENT);
+			} 
+			else {
+				studentLabs.labs = groupLabs;
+			}
 
 			if (groupsForSpec.size() < teachersCountForSpec) {
 				Group group;
@@ -94,12 +99,15 @@ std::vector<Schedule::TeacherEntry> getScheduler(mysqlx::Session& sess, CTime& s
 			}
 
 			studentIndex++;
+			if (studentIndex == groupLabs.size()) {
+				studentIndex = 0;
+			}
 		}
 
 		/*for (Group group : groupsForSpec) {
 			std::cout << "groupTeacher " << group.teacher.surname << endl;
 
-			cout << "students: " << endl;
+			cout << "students: " << group.studentLabs.size() << endl;
 			for (auto stLabs : group.studentLabs) {
 				cout << stLabs.student.surname << " : ";
 
@@ -120,8 +128,8 @@ std::vector<Schedule::TeacherEntry> getScheduler(mysqlx::Session& sess, CTime& s
 		std::vector<StudentLabs> firstShiftStudentLabs;
 		std::vector<StudentLabs> secondShiftStudentLabs;
 
-		firstShiftStudentLabs.assign(group.studentLabs.begin(), group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP);
-		secondShiftStudentLabs.assign(group.studentLabs.begin() + MAX_STUDENTS_IN_GROUP, group.studentLabs.end());
+		firstShiftStudentLabs.assign(group.studentLabs.begin(), group.studentLabs.begin() + group.studentLabs.size() / 2);
+		secondShiftStudentLabs.assign(group.studentLabs.begin() + group.studentLabs.size() / 2, group.studentLabs.end());
 
 		int studentLabsCount = group.studentLabs.at(0).labs.size();
 
