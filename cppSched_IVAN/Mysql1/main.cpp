@@ -1,6 +1,9 @@
 ﻿#include <iostream>
 #include <mysqlx/xdevapi.h>
 #include <atltime.h>
+#include <cxxopts.hpp>
+#include <regex>
+#include <sstream>
 
 #include "entities.h"
 #include "students.h"
@@ -12,11 +15,41 @@
 using ::std::cout;
 using ::std::endl;
 
-int main()
+int main(int argc, char** argv)
 {
 	try
 	{
-		CTime startDate = CTime(2023, 9, 1, 0, 0, 0, 0);
+		cxxopts::Options options("scheduler", "Creating a schedule");
+
+		options.add_options()
+			("d,date", "Start date (YYYY-MM-DD)", cxxopts::value<std::string>());
+
+		auto result = options.parse(argc, argv);
+
+		std::string sDate;
+
+		if (result.count("date")) {
+			sDate = result["date"].as<std::string>();
+		}
+		else {
+			cout << options.help() << endl;
+			exit(0);
+		}
+
+		if (!std::regex_match(sDate, std::regex("\\d{4}-\\d{2}-\\d{2}"))) {
+			cout << "ERROR: invalid date " << sDate << endl;
+			exit(1);
+		}
+
+		std::vector<std::string> dateParts;
+		std::stringstream sStream(sDate);
+		std::string segment;
+
+		while (std::getline(sStream, segment, '-')) {
+			dateParts.push_back(segment);
+		}
+
+		CTime startDate = CTime(stoi(dateParts.at(0)), stoi(dateParts.at(1)), stoi(dateParts.at(2)), 0, 0, 0, 0);
 
 		mysqlx::Session sess("mysqlx://root:Zxcqwe7931@127.0.0.1");
 

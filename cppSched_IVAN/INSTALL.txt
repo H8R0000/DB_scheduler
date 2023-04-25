@@ -8,3 +8,4 @@
 	Перезапустить visual studio
 2. Установка зависимостей
 	vcpkg install nlohmann-json:x64-windows
+	vcpkg install cxxopts:x64-windows
