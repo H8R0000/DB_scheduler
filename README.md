@@ -1,5 +1,4 @@
 # DB_scheduler
-working version of OUR Scheduler
 To start:
 1. Установка vcpkg 
 	cd d:\develop
