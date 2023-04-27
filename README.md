@@ -4,6 +4,7 @@ do:
 DB_scheduler/Vizualizer/src/app.py 
 
 1. Установка vcpkg 
+
 	cd d:\develop
 	
 	git clone https://github.com/microsoft/vcpkg
